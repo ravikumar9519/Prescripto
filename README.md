@@ -1,57 +1,66 @@
-# 🥼 Doctor Appointment Website 
+# Prescripto - Doctor Appointment App
 
-A full-stack Doctor Appointment website built using MongoDB, Express.js, React.js, and Node.js.
+Welcome to **Prescripto**, a comprehensive doctor appointment application designed using the MERN stack. This project features separate panels for **Users**, **Doctors**, and **Admins**, ensuring a seamless experience for all stakeholders. Additionally, it includes integrated payment functionality powered by Razorpay.
 
----
+## Features
 
-## 💡 About This Project 
-The Doctor Appointment website is a user-friendly platform that simplifies scheduling and managing appointments. It includes three main components: 
+### User Panel
 
-1. **Frontend**: Enables users to register, browse doctors, and book appointments.
-2. **Backend**: Handles API requests and manages the database.
-3. **Admin Panel**: Allows admins to manage doctor details, specializations, and more.
+- User authentication and profile management.
+- Browse and search for doctors based on specialization and availability.
+- Book appointments easily.
+- Make secure payments through Razorpay.
+- View appointment history and upcoming schedules.
 
-### Key Features:
-- **User Side**:  
-  - Register and log in securely.
-  - Browse doctors by specialization.
-  - Book appointments with preferred doctors.
-  - Manage and cancel appointments.
-- **Admin Side**:  
-  - Add doctor details (specialization, graduation, photo, etc.).
-  - View and manage appointments.
-  - Secure admin authentication.
+### Doctor Panel
 
-This project took three weeks to complete, providing a fantastic opportunity to learn and grow while exploring full-stack development.
+- Doctor authentication and profile management.
+- Manage availability slots.
+- View and manage appointments.
+- Track patient details and history.
 
----
+### Admin Panel
 
-## ⚡ Technologies
-- `MongoDB`
-- `Express.js`
-- `React.js`
-- `Node.js`
-- `Tailwind CSS`
+- Admin authentication and dashboard access.
+- Manage users and doctors.
+- Approve or reject doctor registrations.
+- Monitor application performance and payment transactions.
 
 ---
 
-## 🛠 Dependencies
-- `Axios`
-- `React Router`
-- `React Toastify`
+## Technologies Used
+
+### Frontend:
+
+- React.js
+- React Router DOM for routing
+- Tailwind CSS for styling
+- Axios for API requests
+- React Toastify for notifications
+
+### Backend:
+
+- Node.js
+- Express.js
+- MongoDB with Mongoose for database management
+
+### Payment Integration:
+
+- Razorpay API
+
+### Development Tools:
+
+- Vite for development and build
+- ESLint for code linting
+- Tailwind CSS and PostCSS for styling
 
 ---
 
-## 🚦 Running the Project
+## Installation
 
-Follow these steps to run the project locally:  
+Follow these steps to set up the project locally:
 
-### 1️⃣ Requirements:
-- [Vite](https://vitejs.dev/)
-- [Node.js](https://nodejs.org/)
-- A MongoDB Free Cluster.
+1. **Clone the repository:**
 
-### 2️⃣ Create `.env` File:
-Add the following in your `.env` file:  
-```plaintext
-MONGODB_URI=mongodb+srv://<username>:<password>@clusterName.mongodb.net/doctor-appointment
+   ```bash
+   git clone https://github.com/ravikumar9519/Prescripto.git
