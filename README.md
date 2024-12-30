@@ -1,66 +1,88 @@
-# Prescripto - Doctor Appointment App
+# Doctor Appointment Website 🭼
+A doctor appointment website built using MongoDB, Express, ReactJS, and Node.js.
 
-Welcome to **Prescripto**, a comprehensive doctor appointment application designed using the MERN stack. This project features separate panels for **Users**, **Doctors**, and **Admins**, ensuring a seamless experience for all stakeholders. Additionally, it includes integrated payment functionality powered by Razorpay.
+# 💡 About This Project
+The Doctor Appointment website is a highly useful platform designed to facilitate scheduling medical appointments. This project consists of three main parts:
 
-## Features
+1. **Backend**  
+2. **Frontend**  
+3. **Admin Panel**
 
-### User Panel
+Users can easily sign up and log in to access features such as:
+- Viewing the home page
+- Browsing the "All Doctors" page
+- Exploring the "About" and "Contact" pages
 
-- User authentication and profile management.
-- Browse and search for doctors based on specialization and availability.
-- Book appointments easily.
-- Make secure payments through Razorpay.
-- View appointment history and upcoming schedules.
+### Key Features:
+- **Search and Filter:** Select doctors based on specialization.
+- **Doctor Profiles:** Detailed pages for each doctor, where users can book appointments.
+- **Appointment Management:** Schedule appointments and manage them via the profile page, including cancellation.
+- **Admin Panel:** Allows administrators to:
+  - Add doctor profiles, including information about their graduation, specialization, and picture.
+  - Manage other key site functionalities.
 
-### Doctor Panel
+This project took three weeks to complete and was a significant learning experience, allowing me to enhance my skills and learn new technologies.
 
-- Doctor authentication and profile management.
-- Manage availability slots.
-- View and manage appointments.
-- Track patient details and history.
+## ⚡ Technologies
+- `MongoDB`
+- `Express`
+- `React JS`
+- `Node JS`
+- `TailwindCSS`
 
-### Admin Panel
+## 🔧 Dependencies
+- `AXIOS`
+- `REACT ROUTER`
+- `REACT TOASTIFY`
+- `RAZORPAY`
 
-- Admin authentication and dashboard access.
-- Manage users and doctors.
-- Approve or reject doctor registrations.
-- Monitor application performance and payment transactions.
+## 🚦 Running the Project
 
----
+To run the project in your local environment, follow these steps: ⬇️
 
-## Technologies Used
-
-### Frontend:
-
-- React.js
-- React Router DOM for routing
-- Tailwind CSS for styling
-- Axios for API requests
-- React Toastify for notifications
-
-### Backend:
-
+### 1⃣ Prerequisites
+- Vite Tool
 - Node.js
-- Express.js
-- MongoDB with Mongoose for database management
+- MongoDB Free Cluster
 
-### Payment Integration:
+### 2⃣ Configure Environment Variables
+Create a `.env` file to store your credentials:
 
-- Razorpay API
+```env
+MONGODB_URI=mongodb+srv://<username>:<password>@clusterName.xxxxxxx.mongodb.net/doctor-appointment
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+```
 
-### Development Tools:
+### 3⃣ Install Packages and Run the Application
 
-- Vite for development and build
-- ESLint for code linting
-- Tailwind CSS and PostCSS for styling
+#### For the Backend:
+1. Navigate to the backend directory.
+2. Run `npm install` to install dependencies.
+3. Start the server with `npm run server`.
+4. Open [http://localhost:4000](http://localhost:4000) (or the address shown in your console) in your web browser.
 
----
+#### For the Frontend:
+1. Navigate to the `frontend` folder: `cd doctor-appointment-website/frontend/`.
+2. Run `npm install` to install dependencies.
+3. Start the app with `npm run dev`.
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Installation
+#### For the Admin Panel:
+1. Navigate to the `admin` folder: `cd doctor-appointment-website/admin/`.
+2. Run `npm install` to install dependencies.
+3. Start the app with `npm run dev`.
+4. Open [http://localhost:5174](http://localhost:5174) in your browser.
 
-Follow these steps to set up the project locally:
+## 🌍 Payment Integration with Razorpay
+A secure and seamless payment system has been integrated using Razorpay. Patients can now:
+1. Select a doctor and book an appointment.
+2. Pay for their consultation securely via Razorpay.
+3. Receive confirmation of their payment and appointment.
 
-1. **Clone the repository:**
+To enable Razorpay integration:
+- Ensure you have added your Razorpay API keys to the `.env` file.
+- Follow Razorpay’s official [documentation](https://razorpay.com/docs/) for testing and deploying payment features.
 
-   ```bash
-   git clone https://github.com/ravikumar9519/Prescripto.git
+</details>
+
